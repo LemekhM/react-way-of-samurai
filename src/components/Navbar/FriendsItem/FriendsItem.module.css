@@ -1,0 +1,9 @@
+.friend img {
+    height: 30px;
+    border-radius: 30px;
+}
+
+.friends {
+    display: flex;
+    justify-content: space-evenly;
+}
