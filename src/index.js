@@ -18,9 +18,7 @@ import {Provider} from "react-redux";
                          dispatch={store.dispatch.bind(store)}
                     />
                 </Provider>
-
             </BrowserRouter>
-
         </React.StrictMode>,
         document.getElementById('root')
     );
