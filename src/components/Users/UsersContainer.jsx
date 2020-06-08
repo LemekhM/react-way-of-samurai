@@ -10,7 +10,7 @@ import {
     unfollow
 } from '../../Redax/users-reducer';
 import Preloader from "../common/Preloader/Preloader";
-
+import {compose} from "redux";
 
 
 class UsersContainer extends React.Component {
@@ -82,12 +82,13 @@ let mapStateToProps = (state) => {
 //     }
 // };
 
-
-export default connect(mapStateToProps, {
+export default compose(connect(mapStateToProps, {
     follow,
     unfollow,
     setUsers,
     setNumberPage,
     toggleFollowingInProgress,
     getUsers
-})(UsersContainer);
+}))(UsersContainer);
+
+
